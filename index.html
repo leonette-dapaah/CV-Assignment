@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+      <link rel="stylesheet" type="text/css" href="index.css">
+
+      <title>
+          CV Assignment
+      </title>
+  </head> 
+  
+  <body>
+      
+    <script src="index.js"></script>
+
+    <div>
+        <form id="addForm">
+            <div class="header">
+                <header>
+                    <strong>Curriculum Vitae Maker</strong>
+                </header>
+                <p class="message">
+                    Welcome!
+                </p>
+            </div>
+
+            
+            <div class="names">
+                <div class="l">
+                    <div class="f_name">
+                        <label>
+                            First Name:
+                        </label>
+                    </div>
+                    <div class="f_name box">
+                        <input name="fname" id="f" placeholder="first name" type="text" required/>
+                    </div>
+                </div>
+    
+                <div class="m">
+                    <div class="m_name">
+                        <label>
+                            Middle Name:
+                        </label>
+                    </div>
+                    <div class="m_name box">
+                        <input name="mname" id="m" placeholder="middle name" type="text" />
+                    </div>
+                </div>
+    
+                <div class="r">
+                    <div class="l_name">
+                        <label>
+                            Last Name:
+                        </label>
+                    </div>
+                    <div class="l_name box">
+                        <input name="lname" id="l" placeholder="last name" type="text" required/>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="gender" id="g">
+                <label>
+                    Gender:
+                </label>
+                
+                <select>
+                    <option disabled="disabled" selected="selected">GENDER</option>
+                    <option>Male</option>
+                    <option>Female</option>
+                    <option>Other</option>
+                </select>
+                <br>
+            </div>
+
+
+            <div class="row">
+                <div class="left">
+                    <div class="p_number">
+                        <label>
+                            Phone Number:
+                        </label>
+                    </div>
+                    <div class="p_number box" id="pbox">
+                        <input name="number" id="p" placeholder="phone number" type="tel" required/>
+                    </div>
+                    <br>
+                </div>
+    
+                <div class="right">
+                    <div class="e-mail">
+                        <label>
+                            E-mail:
+                        </label>
+                    </div>
+                    <div class="e-mail box">
+                        <input name="email" id="e" placeholder="email" type="email" required/>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="addr">
+                <label>
+                    Address:
+                </label>
+            </div class="addr box">
+            <div>
+                <input name="address" id="a" placeholder="eg; P.O.Box MP 3160" type="text" required/>
+            </div>
+
+            <div class="btn">
+                <input name="button" placeholder="Enter last name" type="submit" required/>
+            </div>
+
+        </form>
+    </div>
+
+  </body>
+</html>
