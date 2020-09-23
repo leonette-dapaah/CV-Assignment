@@ -70,7 +70,7 @@ input[type = tel], select {
 }
 
 input #p {
-    width: 100px;
+    width: 625%;
 }
 
 input[type = email], select {

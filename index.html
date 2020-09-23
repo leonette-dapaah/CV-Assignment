@@ -12,8 +12,6 @@
   
   <body>
       
-    <script src="index.js"></script>
-
     <div>
         <form id="addForm">
             <div class="header">
@@ -27,7 +25,7 @@
 
             
             <div class="names">
-                <div class="l">
+                <div id="f">
                     <div class="f_name">
                         <label>
                             First Name:
@@ -38,25 +36,25 @@
                     </div>
                 </div>
     
-                <div class="m">
+                <div id="m">
                     <div class="m_name">
                         <label>
                             Middle Name:
                         </label>
                     </div>
                     <div class="m_name box">
-                        <input name="mname" id="m" placeholder="middle name" type="text" />
+                        <input name="mname" placeholder="middle name" type="text" />
                     </div>
                 </div>
     
-                <div class="r">
+                <div id="l">
                     <div class="l_name">
                         <label>
                             Last Name:
                         </label>
                     </div>
                     <div class="l_name box">
-                        <input name="lname" id="l" placeholder="last name" type="text" required/>
+                        <input name="lname" placeholder="last name" type="text" required/>
                     </div>
                 </div>
                 
@@ -67,7 +65,7 @@
                     Gender:
                 </label>
                 
-                <select>
+                <select name="gender"> 
                     <option disabled="disabled" selected="selected">GENDER</option>
                     <option>Male</option>
                     <option>Female</option>
@@ -85,31 +83,33 @@
                         </label>
                     </div>
                     <div class="p_number box" id="pbox">
-                        <input name="number" id="p" placeholder="phone number" type="tel" required/>
+                        <input name="number"  id="p" placeholder="phone number" type="tel" required/>
                     </div>
                     <br>
                 </div>
     
-                <div class="right">
+                <div class="right" id="e">
                     <div class="e-mail">
                         <label>
                             E-mail:
                         </label>
                     </div>
                     <div class="e-mail box">
-                        <input name="email" id="e" placeholder="email" type="email" required/>
+                        <input name="email" placeholder="email" type="email" required/>
                     </div>
                 </div>
                 
             </div>
 
-            <div class="addr">
-                <label>
-                    Address:
-                </label>
-            </div class="addr box">
-            <div>
-                <input name="address" id="a" placeholder="eg; P.O.Box MP 3160" type="text" required/>
+            <div class="addr" id="a">
+                <div>
+                    <label>
+                        Address:
+                    </label>
+                </div class="addr box">
+                <div>
+                    <input name="address" placeholder="eg; P.O.Box MP 3160" type="text" required/>
+                </div>
             </div>
 
             <div class="btn">
@@ -118,6 +118,8 @@
 
         </form>
     </div>
+
+    <script src="index.js"></script>
 
   </body>
 </html>
